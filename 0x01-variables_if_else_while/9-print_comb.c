@@ -6,11 +6,10 @@
  */
 int main(void)
 {
+	int n;
 	char comma;
 
 	comma = ',';
-
-	int n;
 
 	for (n = 0 ; n < 10 ; n++)
 {
