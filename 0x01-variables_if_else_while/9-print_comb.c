@@ -7,9 +7,6 @@
 int main(void)
 {
 	int n;
-	char comma;
-
-	comma = ',';
 
 	for (n = 0 ; n < 10 ; n++)
 {
@@ -17,7 +14,7 @@ int main(void)
 		if (n < 9)
 {
 
-		putchar(comma);
+		putchar(',');
 		putchar(' ');
 }
 }
