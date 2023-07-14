@@ -11,15 +11,15 @@ int main(void)
 
 	beta = 'a';
 	alpha = 'A';
-	while (alpha <= 'Z')
+	while (beta <= 'z')
+{
+	putchar(alpha);
+	beta++;
+}
+	while (beta <= 'Z')
 {
 	putchar(alpha);
 	alpha++;
-}
-	while (beta <= 'z')
-{
-	putchar(beta);
-	beta++;
 }
 putchar('\n');
 	return (0);
