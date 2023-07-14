@@ -8,9 +8,8 @@ int main(void)
 {
 	char alpha;
 
-	alpha = 'a';
 
-	for (; alpha != 'q', 'e' ; alpha++)
+	for (alpha = 'a' ; alpha != 'q', 'e' ; alpha++)
 {
 		putchar(alpha);
 }
