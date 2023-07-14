@@ -13,7 +13,7 @@ int main(void)
 	alpha = 'A';
 	while (beta <= 'z')
 {
-	putchar(alpha);
+	putchar(beta);
 	beta++;
 }
 	while (alpha <= 'Z')
