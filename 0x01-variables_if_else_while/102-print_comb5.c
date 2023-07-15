@@ -8,13 +8,9 @@ int main(void)
 {
 	int n;
 	int m;
-	int o;
-	int p;
 
 	for (n = 0 ; n <= 9 ; n++)
 	{
-		int n;
-		int m;
 
 		for (n = 0 ; n < 100 ; n++)
 		{
@@ -35,7 +31,8 @@ int main(void)
 				}
 			}
 		}
+	}
 	putchar('\n');
 	return (0);
-}
+
 }
