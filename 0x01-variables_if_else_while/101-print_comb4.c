@@ -16,21 +16,23 @@ int main(void)
 		{
 			for (o = 0 ; o <= 9 ; o++)
 			{
-				if (!(n == m || m ==o || n == o || o < m || m < n || o < n))
+				if (!(n == m || m == o || n == o || o < m || m < n || o < n))
 				{
 					putchar(n + '0');
 					putchar(m + '0');
 					putchar(o + '0');
 					if (!(n == 7 && m == 8 && o == 9))
+
 					{
 							putchar(',');
 							putchar(' ');
-					}		
-							
+					}
+
 				}
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
