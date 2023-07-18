@@ -10,6 +10,11 @@ int print_last_digit(int n)
 	int las;
 
 	las = n % 10;
-	return (las);
+	if (n < 0)
+	{
+		las = las * -1;
+	}
+	_putchar(las + '0');
+
 	return (las);
 }
