@@ -2,22 +2,28 @@
 /**
 * jack_bauer - Entry point
 *
-* Return: 0 Successful
+* Return: void
 */
 void jack_bauer(void)
 {
-	int hour;
-	int minute;
+	int n, m, o, p;
 
-	for (hour = 0 ; hour < 24 ; hour++)
+	for (n = 0 ; n <= 2 ; n++)
 	{
-		for (minute = 0 ; minute < 60 ; minute++)
+		for (m = 0 ; m <= 9 ; m++)
 		{
-			_putchar(hour + '0');
-			_putchar(58);
-			_putchar(minute + '0');
-			_putchar('\n');
+			for (o = 0 ; o <= 5 ; o++)
+			{
+				for (p = 0 ; p <= 9 ; p++)
+				{
+					_putchar(n + '0');
+					_putchar(m + '0');
+					_putchar(58);
+					_putchar(o + '0');
+					_putchar(p + '0');
+					_putchar('\n');
+				}
+			}
 		}
 	}
-
 }
