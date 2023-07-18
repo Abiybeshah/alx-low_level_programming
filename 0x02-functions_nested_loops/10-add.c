@@ -10,8 +10,5 @@ int add(int i, int j)
 {
 	int sum;
 
-	sum = i + j;
-
-	_putchar(sum + '0');
-	return (0);
+	return (i + j);
 }
