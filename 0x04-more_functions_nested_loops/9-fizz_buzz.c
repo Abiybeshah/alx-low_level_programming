@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - print 1-100 and replace multiples of 3 by fizz and multiples of 5 by buzz and for both fizzbuzz
+* main - print 1-100
 *
 * Return: 0 Successful
 */
@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	
+
 	for (i = 0 ; i <= 100 ; i++)
 	{
 		if (i % 3 == 0)
