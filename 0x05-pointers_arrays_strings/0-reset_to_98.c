@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* main - updates the value of n to 98
+* reset_to__98 - updates the value of n to 98
 * @n: the pointer to be updated
 * Return: void
 */
