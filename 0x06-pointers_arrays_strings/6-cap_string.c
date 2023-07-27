@@ -5,14 +5,14 @@
 * Return: char
 */
 
-char *cap_string(char n*)
+char *cap_string(char *n)
 {
 	int i;
 
 	i = 0;
 	while (n[i] != '\0')
 	{
-		if (n[0] >= 97 && s[0] <= 122)
+		if (n[0] >= 97 && n[0] <= 122)
 		{
 			n[0] = n[0] - 32;
 		}
@@ -25,4 +25,5 @@ char *cap_string(char n*)
 		}
 		i++;
 	return(n);
+	}
 }
