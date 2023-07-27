@@ -5,18 +5,18 @@
 * Return: n
 */
 
-char *cap_string(char *n)
+char *cap_string(char *x)
 {
 	int i;
 
 	i = 0;
-	while (n[i] != '\0')
+	while (x[i] != '\0')
 	{
-		if (n[i] >= 97 && n[i] <= 122)
+		if (x[i] >= 97 && x[i] <= 122)
 		{
-			n[i] = n[i] - 32;
+			x[i] = x[i] - 32;
 		}
 		i++;
 	}
-	return (n);
+	return (x);
 }
