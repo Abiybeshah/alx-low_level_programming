@@ -5,7 +5,7 @@
 * Return: char
 */
 
-char *cap_string(char *)
+char *cap_string(char n*)
 {
-	return();
+	return(n);
 }
