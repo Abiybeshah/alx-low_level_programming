@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * cap_string - capitalize all strings
+* @n: input for string
 * Return: char
 */
 
