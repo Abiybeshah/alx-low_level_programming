@@ -3,6 +3,7 @@
 * _strncat - this concatenates two strings but with a limit of n on src
 * @dest: input of a char
 * @src: input of a char
+* @n: input for the limit
 * Return: dest
 */
 
@@ -17,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 	j = 0;
-	while (src[j] != '\0' && j < n)
+	while (j < n && src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
