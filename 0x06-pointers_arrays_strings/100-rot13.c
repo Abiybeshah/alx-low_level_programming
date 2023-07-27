@@ -2,7 +2,7 @@
 /**
 * rot13 - uses the rot 13 encryption
 * @n: the input in char
-* return: n
+* Return: n
 */
 
 char *rot13(char *n)
