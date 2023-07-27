@@ -8,19 +8,18 @@
 char *rot13(char *n)
 {
 	int i;
-	char a[] = "abcdefghijklm";
-	char b[] = "nopqrstuvwxyz";
+	char a[] = "abcdefghijklmopqrstuvwxyz";
+	char b[] = "nopqrstuvwxyzabcdefghijklm";
 	int j;
 
 	i = 0;
 	while (n[i] != '\0')
 	{
 		j = 0;
-		while (j <= 13)
+		while (j <= 26)
 		{
-			if (n[i] == a[j] || n[i] == b[j])
+			if (n[i] == a[j])
 			{
-				n[i] = a[j];
 				n[i] = b[j];
 			}
 			j++;
