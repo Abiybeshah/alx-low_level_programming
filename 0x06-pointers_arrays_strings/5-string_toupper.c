@@ -5,7 +5,7 @@
 * Return: n
 */
 
-char *cap_string(char *x)
+char *string_toupper(char *x)
 {
 	int i;
 
