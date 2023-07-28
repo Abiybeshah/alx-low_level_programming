@@ -9,6 +9,8 @@ char *rot13(char *n)
 {
 	int i;
 	char a[] = "abcdefghijklmopqrstuvwxyz";
+	char A[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char B[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 	char b[] = "nopqrstuvwxyzabcdefghijklm";
 	int j;
 
@@ -18,9 +20,10 @@ char *rot13(char *n)
 		j = 0;
 		while (j <= 26)
 		{
-			if (n[i] == a[j])
+			if (n[i] == a[j] || n[i] == A[j])
 			{
-				n[i] = b[j];
+				n[i] = b[j + 1];
+				n[i] = B[j + 1];
 			}
 			j++;
 		}
