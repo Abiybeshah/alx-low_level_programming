@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* factorinal - returns the factorial of a number
+* factorial - returns the factorial of a number
 * @n: the input of the factorial
 * Return: n
 */
