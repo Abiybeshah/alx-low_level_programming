@@ -8,7 +8,6 @@
 int recursion(int n, int i);
 int _sqrt_recursion(int n)
 {
-	int i;
 	if (n < 0)
 	{
 		return (-1);
@@ -24,9 +23,9 @@ int _sqrt_recursion(int n)
 
 int recursion(int n, int i)
 {
-	if (i = i > n)
+	if (i * i > n)
 		return (-1);
-	if (i = i == n)
+	if (i * i == n)
 		return (1);
 	return (recursion(n, i + 1));
 }
