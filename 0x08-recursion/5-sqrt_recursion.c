@@ -2,6 +2,7 @@
 /**
 * _sqrt_recursion - returns the natural square root of the number
 * @n: input for the value
+* @i: input for iterator
 * Return: n
 */
 
