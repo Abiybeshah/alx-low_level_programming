@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* alloc_grind - returns a pointer to a two dimensional array
+* alloc_grid - returns a pointer to a two dimensional array
 * @width: input for the width
 * @height: input for the weight
 * Return: NULL on failure 0 or negative
