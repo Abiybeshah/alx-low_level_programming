@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* _strdup - this function returns a pointer that contains a copy to the string given as a parameter
+* _strdup - this function returns a pointer
 * @str: pointer to a string
 * Return: if fail returns NULL if success return duplicated string
 */
