@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	char dup;
+	char *dup;
 	int i;
 	int j;
 
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	dup = malloc(sizeof(char) * (i + 1));
 	if (dup == NULL)
 		return (NULL);
-	if (j = 0 ; str[j] ; j++)
+	for (j = 0 ; str[j] ; j++)
 		dup[j] = str[j];
 
 	return (dup);
