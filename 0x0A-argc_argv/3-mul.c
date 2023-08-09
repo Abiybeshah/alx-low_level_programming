@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main - converts a string to the corresponding integer
-* @argc: number of arguments
-* @argv: array of arguments
+* _atoi - converts a string to the corresponding integer
+* @s: the input in char
 * Return: the value of the converted int
 */
 
@@ -15,6 +14,7 @@ int _atoi(char *s)
 	int m = 0;
 	int length = 0;
 	int digit = 0;
+
 	while (s[length] != '\0')
 		length++;
 
