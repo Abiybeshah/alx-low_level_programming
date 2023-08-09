@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 			conv = atoi(argv[count]);
 			sum += conv;
 		}
-		else 
+		else
 		{
 			printf("Error\n");
 			return (1);
