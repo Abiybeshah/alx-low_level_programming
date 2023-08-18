@@ -3,7 +3,7 @@
 
 /**
 * sum_them_all - sums of all of its paramters
-* @n: The number of paramters 
+* @n: The number of paramters
 * @...: A variable number of paramters
 *
 * Return: If n = 0  return 0 else the sum of all the parametrs
