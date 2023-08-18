@@ -7,7 +7,7 @@
 * @separator: The string to separate the numbers
 * @n: The number of args
 * @...: the number of strings to be printed
-* Description: If separator is NULL dont print if one of the strings is null print nil
+* Description: If separator is NULL dont print else print nil
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 	str = va_arg(strings, char *);
 
-	if (str == NULL)	
+	if (str == NULL)
 		printf("(nil)");
 	else
 		printf("%s", str);
