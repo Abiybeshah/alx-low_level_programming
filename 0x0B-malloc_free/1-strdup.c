@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
 * _strdup - this function returns a pointer to a newly allocated space
-* @str - pointer to allocated memory
-* Return - pointer to the allcoated memory or NULL if it fails
+* @str: pointer to allocated memory
+* Return: pointer to the allcoated memory or NULL if it fails
 */
 
 char *_strdup(char *str)
