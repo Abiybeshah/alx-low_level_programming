@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
 * create_array - creates array of chars
-* @size - size of the array
-* @c - the char to print
-* Return - pointer to array or NULL if fail or error
+* @size: size of the array
+* @c: the char to print
+* Return: pointer to array or NULL if fail or error
 */
 
 char *create_array(unsigned int size, char c)
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
+
 	for (i = 0 ; i < size ; i++)
 		s[i] = c;
 	return (s);
