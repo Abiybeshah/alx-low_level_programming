@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * _strdup - this function returns a pointer to a newly allocated space
-* @str - 
+* @str - pointer to allocated memory
 * Return - pointer to the allcoated memory or NULL if it fails
 */
 
@@ -24,8 +24,8 @@ char *_strdup(char *str)
 
 	if (s == NULL)
 		return (NULL);
-	
+
 	for (j = 0 ; str[j] ; j++)
 		s[j] = str[i];
-	return (j);
+	return (s);
 }
