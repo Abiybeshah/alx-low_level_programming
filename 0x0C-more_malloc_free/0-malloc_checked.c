@@ -3,7 +3,7 @@
 
 /**
 * malloc_checked - this fun allocates memory using malloc
-* @b:
+* @b: no. of bytes to allocate
 * Return: returns 98 if fail pointer to allocated mem
 */
 

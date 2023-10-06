@@ -5,7 +5,7 @@
 * string_nconcat - concatenates two strings
 * @s1: input for string 1
 * @s2: input for string 2
-* @n:
+* @n: no. of bytes to concatenate from s1 to s2
 * Return: if fail return NULL pointr to alloc mem
 */
 
