@@ -12,7 +12,7 @@
 
 int is_digit(char *s)
 {
-	int i;
+	int i = 0;
 
 	while (s[i])
 	{
