@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * print_list - prints all the members
@@ -12,12 +14,12 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (!h->str)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%u]%s\n", h->len, h->str);
-		h = h->next;
+			printf("[%d]%s\n", h->len, h->str);
 		s++;
+		h = h->next;
 	}
 	return (s);
 }
