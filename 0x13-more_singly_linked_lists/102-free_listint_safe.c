@@ -1,9 +1,9 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
 * free_listint_safe - frees a linked list
 * @h: pontr to the first node in the linked list
-*
 * Return: numb of elem in the freed list
 */
 size_t free_listint_safe(listint_t **h)
