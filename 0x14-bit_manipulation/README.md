@@ -1,1 +1,1 @@
-this is the project for the bit manupilation
+This is for Bit Manupilation
