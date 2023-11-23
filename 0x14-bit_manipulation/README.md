@@ -1,1 +1,1 @@
-This is the bit manuplation ALX project
+this is the project for the bit manupilation

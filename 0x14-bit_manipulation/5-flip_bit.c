@@ -5,7 +5,8 @@
 * to get from one num to another
 * @n: first num
 * @m: second num
-* Return: num of bits to chang
+*
+* Return: num of bits to change
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -15,9 +16,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	for (a = 63; a >= 0; a--)
 	{
-	current = exclusive >> a;
-	if (current & 1)
-		countbit++;
+		current = exclusive >> a;
+		if (current & 1)
+			countbit++;
 	}
 
 	return (countbit);

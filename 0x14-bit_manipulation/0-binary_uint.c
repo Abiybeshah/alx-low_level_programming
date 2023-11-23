@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
-* binary_to_uint - fun converts a binary num to an unsigned int.
-* @b: pnter to a string containing a binary num
-* Return: unsigned int with decimal value of bin num, or 0 if error
+* binary_to_uint - func conv a binary num to an unsigned int.
+* @b: pnter to a string containing a bin num
+*
+* Return: unsigned int with dec value of bin num, or 0 if error
 */
 unsigned int binary_to_uint(const char *b)
 {
