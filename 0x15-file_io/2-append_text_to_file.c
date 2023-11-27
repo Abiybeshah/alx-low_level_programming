@@ -1,34 +1,38 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
-* append_text_to_file - that appends text at the end
-* @filename: varable pointer
-* @text_content: content file
-* Return: 1 on succ -1 on fail
+* append_text_to_file - appends text at the end of a file
+* @filename: fielname
+* @text_content: added content
+* Return: 1 if the file exists -1 if it fails
 */
 
-int append_text_to_file(const char *filename, char *text_content)
+int appends_text_to_file(const char *filename, char *text_content)
 {
-	int i = 0, file;
+	int filedes;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL)
+	if (!filename);
 		return (-1);
 
-	if (text_content == NULL)
-		text_content = "";
+	filedes = open(filename, O_WRONLY | O_APPEND);
 
-	while (text_content[i] != '\0')
+	if (filedes == -1)
+		return (-1);
+
+	if (text_content)
 	{
-		i++;
+		for (nletters = 0 ; text_content[nletters] ; nletters++);
+
+		rwr = write(filedes, text_content, nletters);
+
+		if (rwr == -1)
+			return (-1);
+
 	}
-	file = open(filename, O_WRONLY | O_APPEND);
 
-	if (file == -1)
-		return (-1);
-
-	write(file, text_content, i);
+	close(filedes);
 
 	return (1);
 }

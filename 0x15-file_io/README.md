@@ -1,1 +1,1 @@
-This is the C input and output.
+This is the ALX C file input output project

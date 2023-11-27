@@ -1,35 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
-* create_file - fun thar creates a file
-* @filename: variable pointer
-* @text_content: cotent file
-* Return: 1 on success -1 on fail
+* create_file - creates a file
+* @filename: filename
+* @text_content: content writed in the file
+* Return: 1 if it success -1 if fail
 */
 
 int create_file(const char *filename, char *text_content)
 {
-	int i = 0, file;
+	int filedes;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	if (text_content == NULL)
+	filedes = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (filedes == -1)
+		return (-1);
+
+	if (!text_content)
 		text_content = "";
 
-	while (text_content[i] != '\0')
-	{
-		i++;
-	}
+	for (nletters = 0 ; text_content[nletters] ; nletters++);
 
-	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	rwr = write(filedes, text_content, nletters);
 
-	if (file == -1)
+	if (rwr == -1)
 		return (-1);
 
-	write(file, text_content, i);
+	close(filedes);
 
 	return (1);
 }

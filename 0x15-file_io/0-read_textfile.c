@@ -1,38 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
-* read_textfile - that reads a text file and prints
-* @filename: variable pointer
-* @letters: size letters
-* Return: the num of letteres read and print else 0
+* read_textfile - reads a text file and print the lette
+* @filename: filename
+* @letters: num of letters printed
+* Return: num of leters printed if fail return 0
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file, let, w;
-	char *text;
+	int filedes;
+	ssize_t nread, nwrite;
+	char *buf;
 
-	text = malloc(letters);
-	if (text == NULL)
+	if (!filename)
 		return (0);
 
-	if (filename == NULL)
+	filedes = open(filename, O_RDONLY);
+
+	if (filedes == -1)
+		return (0);
+	buf = malloc(sizeof(char) * (letters));
+	if (!buf)
 		return (0);
 
-	file = open(filename, O_RDONLY);
+	nread = read(filedes, buf, letters);
+	nwrite = write(STDOUT_FILENO, buf, nread);
 
-		if (file == -1)
-		{
-			free(text);
-			return (0);
-		}
+	close(filedes);
 
-	let = read(file, text, letters);
-	w = write(STDOUT_FILENO, text, let);
-
-	close(file);
-
-	return (w);
+	return (nwrite);
 }
