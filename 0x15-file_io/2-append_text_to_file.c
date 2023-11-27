@@ -7,7 +7,7 @@
 * Return: 1 if the file exists -1 if it fails
 */
 
-int appends_text_to_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int filedes;
 	int nletters;
