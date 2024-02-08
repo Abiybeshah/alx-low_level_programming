@@ -7,7 +7,7 @@
 * Return: value of the exponent
 */
 
-unsigned long int pow(unsigned int base, unsigned int power)
+unsigned long int pow_er(unsigned int base, unsigned int power)
 {
 	unsigned long int exp;
 
@@ -30,7 +30,7 @@ void print_binary(unsigned long int n)
 	char flag;
 
 	flag = 0;
-	divisor = pow(2, sizeof(unsigned long int) * 8 - 1);
+
 	while(divisor != 0)
 	{
 		flag = 1;
