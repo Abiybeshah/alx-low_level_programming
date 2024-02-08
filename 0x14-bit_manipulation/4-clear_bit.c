@@ -8,9 +8,9 @@
 * Return: 1 if success -1 if error
 */
 
-int cleat_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if(index > sizeof(n) * 9)
+	if (index > sizeof(n) * 9)
 		return (-1);
 	*n &= ~(1 << index);
 	return (1);

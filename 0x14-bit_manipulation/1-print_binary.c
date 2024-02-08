@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* pow - function thar returns the power of a base b number to n
+* pow_er - function thar returns the power of a base b number to n
 * @base: the base of the exponent
 * @power: the power of the exponent
 * Return: value of the exponent
@@ -14,7 +14,7 @@ unsigned long int pow_er(unsigned int base, unsigned int power)
 	unsigned int ind;
 
 	exp = 1;
-	for(ind = 1; ind <= power; ++ind)
+	for (ind = 1; ind <= power; ++ind)
 		exp *= base;
 	return (exp);
 }
@@ -31,15 +31,15 @@ void print_binary(unsigned long int n)
 
 	flag = 0;
 
-	while(divisor != 0)
+	while (divisor != 0)
 	{
 		flag = 1;
-		if(check == divisor)
+		if (check == divisor)
 		{
 			flag = 1;
 			_putchar('1');
 		}
-		else if(flag == 1 || divisor == 1)
+		else if (flag == 1 || divisor == 1)
 		{
 			_putchar('0');
 		}
