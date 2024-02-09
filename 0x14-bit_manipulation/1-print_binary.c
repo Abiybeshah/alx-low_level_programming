@@ -14,7 +14,7 @@ unsigned long int pow_er(unsigned int base, unsigned int power)
 	unsigned int ind;
 
 	exp = 1;
-	for (ind = 1; ind <= power; ++ind)
+	for (ind = 1; ind <= power; ind++)
 		exp *= base;
 	return (exp);
 }
@@ -35,7 +35,7 @@ void print_binary(unsigned long int n)
 
 	while (divisor != 0)
 	{
-		flag = 1;
+		check = n & divisor;
 		if (check == divisor)
 		{
 			flag = 1;
