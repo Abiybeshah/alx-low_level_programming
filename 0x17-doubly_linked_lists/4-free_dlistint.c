@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* free_distint - frees a distint_t list
+* free_dlistint - frees a distint_t list
 * @head: pntr to the list
 */
 

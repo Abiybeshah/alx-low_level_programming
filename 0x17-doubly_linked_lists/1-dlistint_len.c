@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* distint_len - returns the num of elem in a linked
+* dlistint_len - returns the num of elem in a linked
 * distint_t list
 * @h: pntr to the list
 * Return: num of nodes

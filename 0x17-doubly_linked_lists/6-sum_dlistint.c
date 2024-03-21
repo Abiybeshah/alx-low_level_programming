@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* sum_distint - returns the sum of all the distit_t
+* sum_dlistint - returns the sum of all the distit_t
 * @head: pntr to the list
 * Return: sum of all data in the list
 */

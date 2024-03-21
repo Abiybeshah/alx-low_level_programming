@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* add_dnodeint_end - adds a new node at the end of a distint_t 
+* add_dnodeint_end - adds a new node at the end of a distint_t
 * @head: pntr to the first elem of the list
 * @n: int to set in the new node
 * Return: adress of the new elem
