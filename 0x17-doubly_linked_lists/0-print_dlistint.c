@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* print_distint - prints all the elem of distnict_t
+* print_dlistint - prints all the elem of distnict_t
 * @h: head of the list
 * Return: the num of nodes
 */
