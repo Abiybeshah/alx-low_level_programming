@@ -3,13 +3,13 @@
 /**
 * print_array - print an array
 * @array: the array to print
-* @i: the left index
+* @l: the left index
 * @r: the right side
 */
 
 void print_array(int *array, int l, int r)
 {
-	int i;
+	int i = 0;
 
 	for (i = l; i <= r; i++)
 	{
@@ -32,7 +32,7 @@ int binary_search(int *array, size_t size, int value)
 {
 	int l = 0, r = size - 1, m;
 
-	if (!array ||size == 0)
+	if (!array || size == 0)
 		return (-1);
 
 	while (l <= r)
